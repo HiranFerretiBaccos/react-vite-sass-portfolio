@@ -1,0 +1,36 @@
+@use '../variables'
+@use '../mixins'
+
+#social-networks
+    @include mixins.center
+    gap: 1rem
+    margin: 1rem 0
+
+    .social-btn
+        background-color: variables.$bg-color-secondary
+        border-radius: variables.$card-border-radius
+        padding: .6rem
+        font-size: 1.3rem
+        color: #333
+        @include mixins.center
+
+    #linkedin
+        color: #0072b1
+
+    #github
+        color: #fff
+
+    #instagram
+        color: #bc2a8d
+
+    #linkedin:hover
+        background: variables.$gradientLinkedin
+        color: variables.$text-color
+
+    #github:hover
+        background: variables.$gradientGithub
+        color: #111
+
+    #instagram:hover
+        background: variables.$gradient
+        color: variables.$text-color

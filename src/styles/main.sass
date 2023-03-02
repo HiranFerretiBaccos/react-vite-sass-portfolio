@@ -1,0 +1,22 @@
+//Deploy no Github / Vercel.
+//Precisa do Node.js pra rodar o SASS. (Node será compilado com o Vite).
+//Não é necessário chaves{} pra abrir/fechar as classes/escopo das tags utilizadas nem ponto e vírgula;
+//Utilizar Tab. 
+//'main' é o arquivo principal, onde tem o reset padrão. 
+//'mixins' é onde tem as funções. 
+//'variables' é onde tem as variáveis - $nomeDaVariavel: "valor"
+//Importando as variáveis - @use 'nomeDoArquivo' (Sem a extensão).
+
+@use 'variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: variables.$font-stack
+
+body
+    background-color: variables.$body-bg-color
+
+a, svg
+    transition: .2s
